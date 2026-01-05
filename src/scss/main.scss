@@ -12,3 +12,31 @@ img,
 video {
   display: block;
 }
+
+body {
+  background: var(--lavender, #c4d2f5);
+}
+
+.player {
+  border-radius: 20px;
+  background: var(--white, #fff);
+  box-shadow: 0 0 0 20px rgba(255, 254, 254, 0.15);
+  display: flex;
+  width: 440px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.player-track-title,
+.player-track-artist,
+.player-time.current,
+.player-time.total {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
