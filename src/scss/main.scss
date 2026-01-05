@@ -17,6 +17,10 @@ body {
   background: var(--lavender, #c4d2f5);
 }
 
+audio {
+  display: none;
+}
+
 .player {
   border-radius: 20px;
   background: var(--white, #fff);
@@ -29,6 +33,7 @@ body {
   align-items: center;
   gap: 30px;
   flex-shrink: 0;
+  margin: 100px 0 0 100px;
 }
 
 .player-track-title,
@@ -41,9 +46,30 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  display: flex;
+  align-items: center;
 }
 
 .player-track-title {
   color: var(--black, #000);
   font-size: 18px;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+}
+.player-progress-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 3px;
+  background: var(--light-gray, #f6f6ef);
+}
+
+.player-progress-inner {
+  background: var(--purple, #e783bc);
 }
